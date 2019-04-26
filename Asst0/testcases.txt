@@ -1,0 +1,64 @@
+./pointersorter
+error: improper number of inputs. please enter just one string.
+
+./pointersorter ""
+
+./pointersorter " a b c"
+c
+b
+a
+
+./pointersorter "c b a "
+c
+b
+a
+
+./pointersorter "1234r324"
+r
+
+./pointersorter "a Z z A"
+Z
+A
+z
+a
+
+./pointersorter "0"
+
+./pointersorter "and an"
+and
+an
+
+./pointersorter "aN and"
+aN
+and
+
+./pointersorter "a1234 2134 44211 b -------------------------------- z"
+z
+b
+a
+
+./pointersorter "a A an aN An AN and And AnD ANd anD aND AND and and and"
+AND
+ANd
+AN
+AnD
+And
+An
+A
+aND
+aN
+anD
+and
+and
+and
+and
+an
+a
+
+./pointersorter one two
+error: improper number of inputs. please enter just one string.
+
+./pointersorter "d\$\0\\n123 12    --__-- a"
+n
+d
+a

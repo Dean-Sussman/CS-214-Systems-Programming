@@ -1,0 +1,5 @@
+Pointersorter.c first parses the input passed through the command line, and then sorts it in reverse alphabetical order. The parsing is done by iterating through argv character by character, using two 'pointers'. The first points to the start of the string to be parsed, while the second moves through the string until a delimiter is found or the string ends. Once the end is found, the string at argv from the start pointer to the end pointer is added to a linked list.
+
+The linked list nodes are sorted as they are inserted. The linked list is essentially linearly searched for the proper index to insert the node at. The new node's string is compared character by character to each other node's string until a suitable insertion point is found. This is essentially an implementation of strcmp(), with the main difference being that the case of capital vs lowercase letters is handled inversely. 
+
+After each string has been parsed and inserted, the linked list is printed, any memory allocated is freed, and the program returns.
